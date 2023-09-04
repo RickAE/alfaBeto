@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cherry Bomb One';
-    src: url('/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf') format('truetype');
+    src: url('../fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf') format('truetype');
   }
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url("/img/main_background.png");
+    background-image: url("../img/main_background.png");
 }
 
 .container_box {
