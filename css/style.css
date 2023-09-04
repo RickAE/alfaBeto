@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Cherry Bomb One';
+    src: url('/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf') format('truetype');
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Cherry Bomb One";
+}
+
+body {
+    background-image: url("/img/main_background.png");
+}
+
+.container_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.logo {
+    width: 242px;
+    height: 72px;
+}
+
+.start_button {
+    width: 238px;
+    height: 238px;
+    
+    border-radius: 300px;
+    background: none;
+    border: none;
+    box-shadow: -5px 5px 2px rgba(0,0,0,0.6), inset -6px 6px 6px white;
+    /* box-shadow: 5px 5px 2px rgba(0,0,0,0.6), inset 6px 6px 6px white; */
+    box-sizing: border-box;
+
+    margin-bottom: 70px;
+    margin-top: 14px;
+
+    animation-duration: 2s;
+    animation-name: blob_rotation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.start_text {
+    color: #DA6B1A;
+    font-size: 36px;
+    /* offset-x | offset-y | blur-radius | color */
+}
+
+.intro_message {
+    font-size: 32px;
+    width: 492px;
+    color: #DA6B1A;
+    transition: all, 5s;
+}
+
+.intro_message:hover {
+    cursor: pointer;
+}
+
+.fade_out {
+    opacity: 0;
+}
+
+.fade_in {
+    opacity: 100;
+}
+
+.text_shadow {
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
+
+@keyframes blob_rotation {
+    from {
+        box-shadow: -5px 5px 2px rgba(0,0,0,0.6), inset -6px 6px 6px white;
+    }
+
+    to {
+        box-shadow: 5px 5px 2px rgba(0,0,0,0.6), inset 6px 6px 6px white;
+    }
+}
