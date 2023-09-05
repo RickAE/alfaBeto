@@ -13,6 +13,10 @@ body {
     background-image: url("../img/main_background.png");
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .container_box {
     display: flex;
     flex-direction: column;
@@ -27,8 +31,7 @@ body {
 }
 
 .logo {
-    width: 242px;
-    height: 72px;
+    width: 194px;
 }
 
 .start_button {
@@ -38,7 +41,7 @@ body {
     border-radius: 300px;
     background: none;
     border: none;
-    box-shadow: -5px 5px 2px rgba(0,0,0,0.6), inset -6px 6px 6px white;
+    /* box-shadow: -5px 5px 2px rgba(0,0,0,0.6), inset -6px 6px 6px white; */
     /* box-shadow: 5px 5px 2px rgba(0,0,0,0.6), inset 6px 6px 6px white; */
     box-sizing: border-box;
 
@@ -49,6 +52,16 @@ body {
     animation-name: blob_rotation;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+}
+
+.start_button img {
+    margin: auto;
+    margin-left: 20px;
+}
+
+.start_button:hover {
+    cursor: pointer;
 }
 
 .start_text {
@@ -92,4 +105,104 @@ body {
     to {
         box-shadow: 5px 5px 2px rgba(0,0,0,0.6), inset 6px 6px 6px white;
     }
+}
+
+
+/* ===================================================================== */
+
+/* Tela de Login */
+
+.menu_incial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0px 22px 0 22px;
+}
+
+
+.back_button{
+    width: 91px;
+    height: 91px;
+    border-radius: 400px;
+    border: none;
+    background: none;
+    /* box-shadow: [inset][h-offset][v-offset][blur][spread][color]; */
+    /* box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white; */
+}
+
+.back_button:hover{
+    cursor: pointer;
+}
+
+.wrapper_login {
+    width: 900px;
+    border: none;
+    margin: auto;
+    border-radius: 35px;
+    box-shadow: inset 0px 0px 30px 0px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 79px;
+    
+}
+
+.wrapper_login input {
+    width: 436px;
+    height: 46px;
+    border-radius: 40px;
+    font-size: 40px;
+    color: #CA9B2F;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+
+.wrapper_login input::placeholder {
+    color: #CA9B2F;
+}
+
+.wrapper_login button {
+    height: 65px;
+    border-radius: 40px;
+    font-size: 40px;
+    color: #55A63F;
+
+}
+
+.txt_log{
+    margin-bottom: 52px;
+}
+
+.txt_pwd {
+    margin-bottom: 136px;
+}
+
+.btn_login {
+    width: 149px;
+    margin-bottom: 77px;
+}
+
+.btn_criar {
+    width: 329px;
+    margin-bottom: 77px;
+}
+
+.btn_continuar {
+    width: 436px;
+    margin-bottom: 77px;
+}
+
+.blob_efect {
+    background: none;
+    border: none;
+    box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white;
+}
+
+/* ==================================================================================== */
+
+/* Main */
+
+.main_menu {
+    
 }
