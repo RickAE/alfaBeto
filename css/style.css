@@ -535,3 +535,10 @@ a {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .btn_cadastrar {
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
