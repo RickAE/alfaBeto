@@ -434,9 +434,6 @@ a {
 
 /* Configuração */
 
-.wrapper_conf {
-
-}
 
 .wrapper_config {
     width: 50vw;
@@ -542,3 +539,49 @@ a {
     align-items: center;
     justify-content: center;
   }
+
+  /* ===================================================================== */
+
+  /* Reportar */
+
+.wrapper_reportar {
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
+.wrapper_reportar textarea {
+    width: 70%;
+    font-size: 25px;
+    color: #CA9B2F;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
+
+.wrapper_reportar a {
+    transition: all 2s;
+    font-size: 40px;
+    margin-top: 40px;
+    box-shadow: none;
+    color: red;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
+
+.wrapper_reportar a:hover {
+    box-shadow: none;
+    font-size: 50px;
+}
