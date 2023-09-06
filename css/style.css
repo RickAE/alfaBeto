@@ -51,6 +51,33 @@ ul {
     width: 194px;
 }
 
+.wrapper_conf {
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.wrapper_conf ul {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_conf ul li {
+    margin-right: 19px;
+}
+
+.wrapper_conf ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 400px;
+    width: 114px;
+    height: 114px;
+}
+
+.wrapper_conf ul li a:hover {
+    box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white;
+}
+
 /* ===================================================================== */
 
 .wrap_container {
@@ -348,6 +375,49 @@ ul {
 .wrapper_ranking ul li {
     font-size: 40px;
     color: #CA9B2F;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
+
+/* ======================================================================================= */
+
+/* Pefil */
+
+.wrapper_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.wrapper_perfil h3 {
+    font-size: 40px;
+    color: #CA9B2F;
+    margin-bottom: 58px;
+    margin-top: 20px;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
+
+.wrapper_perfil img {
+    width: 191px;
+    margin-bottom: 30px;
+}
+
+.wrapper_perfil p {
+    font-size: 40px;
+    color: #CA9B2F;
+    margin-bottom: 20px;
     text-shadow:
     -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
      1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
