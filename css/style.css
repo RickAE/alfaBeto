@@ -1,3 +1,4 @@
+/* Configurações Gerais do Site */
 @font-face {
     font-family: 'Cherry Bomb One';
     src: url('../fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf') format('truetype');
@@ -17,11 +18,40 @@ button:hover {
     cursor: pointer;
 }
 
-.container_box {
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+/* ====================================================================*/
+
+/* Classes Gerais */
+.blob_efect {
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.6), inset 0px 0px 20px -5px #000;
+}
+
+.blob_efect a, button{
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.6), inset 0px 0px 20px -5px #000;
+    border-radius: 400px;
+}
+
+.blob_efect a:hover, button:hover {
+    box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
+.logo {
+    width: 194px;
+}
+
+/* ===================================================================== */
 
 .wrap_container {
     display: flex;
@@ -30,9 +60,6 @@ button:hover {
     align-items: center;
 }
 
-.logo {
-    width: 194px;
-}
 
 .start_button {
     width: 238px;
@@ -127,8 +154,6 @@ button:hover {
     border-radius: 400px;
     border: none;
     background: none;
-    /* box-shadow: [inset][h-offset][v-offset][blur][spread][color]; */
-    /* box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white; */
 }
 
 .back_button:hover{
@@ -136,7 +161,7 @@ button:hover {
 }
 
 .wrapper_login {
-    width: 900px;
+    width: 600px;
     border: none;
     margin: auto;
     border-radius: 35px;
@@ -193,16 +218,108 @@ button:hover {
     margin-bottom: 77px;
 }
 
-.blob_efect {
-    background: none;
-    border: none;
-    box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white;
-}
+
 
 /* ==================================================================================== */
 
 /* Main */
 
+
 .main_menu {
-    
+    border-radius: 30px;
+    margin: 26px;
+    padding: 15px 0px;
+    margin-bottom: 78px;
+}
+
+.main_menu nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main_menu nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.pessoa {
+    width: 60px;
+}
+
+.play {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.wrapper_level_select {
+    margin: 0 auto;
+    width: 75vw;
+    height: 528px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.box_nivel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    width: 278px;
+    height: 394px;
+    border-radius: 40px;
+    margin-left: 53px;
+}
+
+.box_nivel h3 {
+    color: #CA9B2F;
+}
+
+.box_nivel button {
+    box-shadow: none;
+    font-size: 40px;
+    color: #55A63F;
+    display: flex;
+    margin-top: 154px;
+}
+
+.box_nivel button img {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.box_numbers {
+    margin-top: 190px;
+}
+
+.up_row {
+    margin-left: 124px;
+}
+
+.down_row {
+    margin-left: 26px;
+}
+
+.down_row button:hover, .up_row button:hover {
+    box-shadow: -3px 3px 4px rgba(0,0,0,0.6), inset -3px 3px 4px 1px white;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
+
+.down_row button, .up_row button{
+    box-shadow: none;
+    width: 90px;
+    height: 90px;
+    background-color: #9BEBF3;
+    color: #5189B1;
+    font-size: 40px;
+    margin-right: 88px;
 }
