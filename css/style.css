@@ -323,3 +323,34 @@ ul {
     font-size: 40px;
     margin-right: 88px;
 }
+
+/* ========================================================================================= */
+
+/* Ranking */
+
+.wrapper_ranking {
+    width: 50vw;
+    height: 687px;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper_ranking h3 {
+    font-size: 40px;
+    color: #CA9B2F;
+    margin-bottom: 58px;
+    margin-top: 20px;
+}
+
+.wrapper_ranking ul li {
+    font-size: 40px;
+    color: #CA9B2F;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda (cor do contorno) */
+     1px -1px 0 #000, /* Sombra superior direita (cor do contorno) */
+    -1px  1px 0 #000, /* Sombra inferior esquerda (cor do contorno) */
+     1px  1px 0 #000; /* Sombra inferior direita (cor do contorno) */
+}
